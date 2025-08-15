@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SA Doctor Scan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>SA Doctor Scan</h1>
+    <p class="tag">Snap • Ask • Learn (not a diagnosis)</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Scan Symptom (skin, eye, etc.)</h2>
+      <input type="file" id="symptomFile" accept="image/*" />
+      <button id="scanSymptomBtn">Analyze Symptom</button>
+    </section>
+
+    <section class="card">
+      <h2>Scan Medicine (pill or box)</h2>
+      <input type="file" id="medicineFile" accept="image/*" />
+      <button id="scanMedicineBtn">Analyze Medicine</button>
+    </section>
+
+    <section class="card">
+      <h2>Ask a Question</h2>
+      <div class="row">
+        <select id="voiceStyle">
+          <option value="neutral" selected>Neutral</option>
+          <option value="male">Male style</option>
+          <option value="female">Female style</option>
+        </select>
+        <input id="question" placeholder="e.g., What helps with seasonal allergies?" />
+      </div>
+      <button id="askBtn">Ask</button>
+    </section>
+
+    <section class="card output">
+      <h2>Result</h2>
+      <pre id="result">Awaiting input…</pre>
+    </section>
+
+    <section class="about">
+      <small>CEO & Founder: <strong>Sairam Mannem</strong> • Instagram: <a href="https://www.instagram.com/sairammannem" target="_blank">@sairammannem</a></small>
+    </section>
+  </main>
+
+  <footer>
+    <small>Educational use only. Not a medical diagnosis. If symptoms are serious, seek a doctor immediately.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
